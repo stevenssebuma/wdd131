@@ -1,0 +1,217 @@
+/** {  
+    box-sizing: border-box;  
+}  
+
+body {  
+    font-family: Arial, sans-serif;  
+    margin: 0;  
+    padding: 0;  
+    background-color: #f9f9f9;  
+}  
+
+header {  
+    background-color: #003366;  
+    color: white;  
+    padding: 15px 20px;  
+    text-align: center;  
+}  
+
+header h1 {  
+    margin: 0;  
+    font-size: 1.8em;  
+}  
+
+nav ul {  
+    list-style: none;  
+    padding: 0;  
+}  
+
+nav ul li {  
+    display: inline;  
+    margin: 0 15px;  
+}  
+
+nav ul li a {  
+    color: white;  
+    text-decoration: none;  
+}  
+
+main {  
+    display: flex;  
+    flex-wrap: wrap;  
+    margin: 20px;  
+    justify-content: space-between;  
+}  
+
+.about-me, .toloria {  
+    background-color: #e6f2ff;  
+    border: 1px solid #003366;  
+    border-radius: 5px;  
+    padding: 20px;  
+    flex: 1 1 45%; /* Basis for flex items  
+    margin: 10px;  
+}  
+
+.profile-img {  
+    max-width: 150px;  
+    float: right;  
+    margin-left: 15px;  
+    border-radius: 50%;  
+}  
+
+.toloria {  
+    background-color: #d0e0ea;  
+}  
+
+.flag-img {  
+    max-width: 100px;  
+}  
+
+.web-dev-resources {  
+    flex: 1 1 22%; /* Basis for aside
+    background-color: #ffffff;  
+    border: 1px solid #003366;  
+    border-radius: 5px;  
+    padding: 20px;  
+    margin: 10px;  
+}  
+
+footer {  
+    background-color: #003366;  
+    color: white;  
+    text-align: center;  
+    padding: 10px 0;  
+    position: relative;  
+    bottom: 0;  
+    width: 100%;  
+}  
+
+footer p {  
+    margin: 5px 0;  
+} */  
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+header {
+    background-color: rgb(88, 192, 192);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+h1, h2 {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+nav {
+    display: flex;
+    background-color: black;
+    padding: 5px;
+    justify-content: center;
+    align-content: space-evenly;
+}
+
+nav a {
+    flex: 1;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: aqua;
+    background-color: crimson;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    max-width: fit-content;
+}
+
+.card-1 {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.about {
+    display: flex;
+}
+
+.card-1 h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+.card-1 .about p {
+    padding: 20px;
+    text-align: left;
+}
+
+.card-1 .about img {
+    width: 150px;
+    height: auto;
+    float: right;
+}
+
+.title {
+    background-color: rgb(106, 106, 219);
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.card-1 {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.country {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.card-1 h2 {
+    text-align: center;
+    text-decoration: underline;
+    padding: 2px;
+    border-bottom: 2px solid rgb(0, 0, 0, 0.2);
+}
+.card-1 .country p {
+    padding: 20px;
+    text-align: left;
+}
+
+.card-1 .country img {
+    width: 200px;
+    height: auto;
+    float: left;
+}
+
+.card-2 {
+    border: 1px solid black;
+    padding-top: 10px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.card-2 h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.content {
+    padding: 15px;
+}
+
+footer {
+    text-align: center;
+    background-color: darkcyan;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.red {
+    font-style: italic;
+    color: brown;
+}
