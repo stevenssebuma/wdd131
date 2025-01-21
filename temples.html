@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals | Temple Album - Steven Ssebuma</title>
+    <meta name="description" content="This is a page that contains images of the temple. It is more of a temple album/gallery that I created for my week 02 assignment.">
+    <meta name="author" content="Prince George Ndiwalana">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temple-large.css">
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav id="nav">
+            <div id="nav-header">
+                <h1>Temple Album</h1>
+                <button id="hamburger" title="menu button"></button>
+            </div>
+            <ul>
+                <li><a href="temples.html" onclick="changeMenu ('Home')">Home</a></li>
+                <li><a href="old" onclick="changeMenu ('old')">Old</a></li>
+                <li><a href="new" onclick="changeMenu ('New')">New</a></li>
+                <li><a href="large" onclick="changeMenu ('Large')">Large</a></li>
+                <li><a href="small" onclick="changeMenu ('Small')">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h2 id="menuHeading">Home</h2><br>
+        </div>
+        <div id="temple-img">
+            <figure>
+                <img src="images/aba_nigeria_temple_lds.webp" alt="Aba Nigeria Temple">
+                <figcaption>The Aba Nigeria Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/accra_ghana_temple_lds.webp" alt="Accra Ghana Temple">
+                <figcaption>The Ghana Accra Temole</figcaption>
+            </figure>
+            <figure>
+                <img src="images/anchorage_temple_lds.webp" alt="Anchorage Alaska Temple">
+                <figcaption>The Anchorage Alaska Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/apia_samoa_temple_lds.webp" alt="Apia Samoa Temple">
+                <figcaption>The Apia Samoa Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/frankfurt_germany_temple_lds.webp" alt="Frankfurt Germany Temple">
+                <figcaption>The Frankfurt Germany Temple</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="images/boise_idaho_temple_lds.webp" alt="Boise Idaho Temple">
+                <figcaption>The Boise Idaho Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/brisbane_australia_temple_lds.webp" alt="Brisbane Australia Temple">
+                <figcaption>The Brisbane Australia Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/denver_colorado_temple_lds.webp" alt="Denver Colorado Temple">
+                <figcaption>The Denver Colorado Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/bern_switzerland_temple_lds.webp" alt="Bern Switzerland Temple">
+                <figcaption>The Bern Switzerland Temple</figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> ✈ Steven Ssebuma ✈ Uganda</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
