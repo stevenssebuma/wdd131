@@ -1,0 +1,186 @@
+:root {
+    --color-primary: #040e68;
+    font-family: "Roboto", Geneva, Verdana, sans-serif;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header,
+  footer {
+    background-color: var(--color-primary);
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", "Geo", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  header h1 {
+    font-size: 2.7rem;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    background-color: var(--color-primary);
+  }
+  
+  .green {
+    background-color: #aedf60;
+    height: 15px;
+  }
+  
+  picture img {
+    width: 100%;
+  }
+  
+  
+  div table {
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+  
+  figure img {
+    width: 100%;
+  }
+  
+  .white-background table th:first-child {
+    padding-left: 100px;
+    unicode-bidi: isolate;
+  }
+  .card-data, .card-weather  {
+    display: block;
+    margin: auto;
+    margin: 30px;
+    font-size: 15px;
+  
+  }
+  
+  .card-data h2, .card-weather h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(79, 76, 76);
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(136, 131, 131);
+  }
+  
+  .card-weather #icon {
+    display: block;
+    margin: auto;
+  
+  }
+  
+  .card-weather h2::after {
+    content:"  ⛅︎";
+    
+  }
+  
+  section .white-background  {
+    align-items: center;
+    align-content: center;
+    
+    
+  }
+  section div table tbody th {
+    text-align: right;
+    padding-right: 5px;
+    
+  }
+  
+  div table tbody tr {
+    display: table-row;
+    vertical-align: inherit;
+    unicode-bidi: isolate;
+    border-color: inherit;
+  
+  }
+  
+  table {
+    border-collapse: separate;
+    text-indent: initial;
+    
+  }
+  
+  div .cards #icon {
+   align-content: center;
+  }
+  
+  footer {
+    background-color: #040e68;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid #040e68;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    row-gap: 25px;
+    font-size: 1.2rem;
+  }
+  
+
+  @media (min-width:1000px) {
+  
+.card-data, .card-weather {
+    background-color: rgba(247, 217, 217, 0.5); /* Transparent with a shade */
+    padding-bottom: 20px;
+}
+  
+  
+  .card-data h2, .card-weather h2 {
+    font-size: 1.7rem;
+    text-align: left;
+    background-color: #cf0d0d;
+    color: white;
+    padding: 7px;
+    padding-left: 30px;
+    margin-top: 20px;
+    margin-left:-10px;
+    margin-bottom: 20px;
+    
+  }
+  
+  .photo {
+    position: relative;
+  
+  }
+  
+  .card-data {
+    position: absolute;
+    top: 20%;
+    left: 1%;
+    z-index: 2;
+    width: 35%;
+    font-size: 15px;
+    
+  
+  }
+  
+  .card-weather {
+    position: absolute;
+    top: 115%;
+    right: 1%;
+    z-index: 2;
+    width: 35%;
+    font-size: 15px;
+  
+  }
+  
+  .card-weather #icon {
+    display: none;
+   }
+  
+  
+  }
+  
+  
+  

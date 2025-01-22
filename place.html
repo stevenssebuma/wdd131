@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uganda - WDD 131 - Dynamic Web Fundamentals</title>
+    <meta name="description" content="This is a page that contains images of the temple. It is more of a temple album/gallery that I created for my week 02 assignment.">
+    <meta name="author" content="Steven Ssebuma">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/temple-large.css">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+
+    <header><h1>U g a n d a</h1></header>
+    <div class="green"></div>
+    <main>
+      <div class="photo">
+        <picture>
+          <source media="(min-width:1000px)" srcset="images/Uganda-Hero.webp">
+          <source media="(min-width:500px)" srcset="images/Uganda-Hero.webp">
+          <img src="images/Uganda-Hero.webp" alt="The Uganda Gorilla">
+        </picture>
+      </div>
+
+      <section class="white-background">
+        
+        <div class="card-data">
+          <h2>Data</h2>
+          <table>
+            <tbody>
+              <tr><th>Country: </th><td>Uganda</td></tr>
+              <tr><th>Area: </th><td>241,550km<sup>2</sup></td></tr>
+              <tr><th>Population: </th><td>48,539,000</td></tr>
+              <tr><th>Capital: </th><td>Kampala</td></tr>
+              <tr><th>Language: </th><td>English, Swahili, Luganda, Et.c</td></tr>
+              <tr><th>Currency: </th><td>Ugandan Shillings </td></tr>
+              <tr><th>Code: </th><td>+256</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card-weather">
+          <h2>Weather</h2>
+          <img id="icon" src="images/weather-img.svg" alt="Weather Image" width="100">
+          <table>
+            <tbody>
+          
+              <tr><th>Temperature: </th><td>27&deg;C</td></tr>
+              <tr><th>Conditions: </th><td>Sunny</td></tr>
+              <tr><th>Wind: </th><td>13 km/h</td></tr>
+              <tr><th >Wind Chill: </th><td id="calculateWindChill"> °C</td></tr>
+            </tbody>
+          </table>
+        </div>
+        
+      </section>
+
+    </main>
+   
+  
+
+    <footer>
+      <p>&copy;<span id="currentyear"></span>  |  Steven Ssebuma  |  Uganda</p>
+      <p id="lastModified"></p>
+    </footer>
+
+  </body>
+    
+</html>
+
