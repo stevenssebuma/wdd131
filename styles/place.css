@@ -128,59 +128,6 @@
   }
   
 
-  @media (min-width:1000px) {
-  
-.card-data, .card-weather {
-    background-color: rgba(247, 217, 217, 0.5); 
-    padding-bottom: 20px;
-}
-  
-  
-  .card-data h2, .card-weather h2 {
-    font-size: 1.7rem;
-    text-align: left;
-    background-color: #cf0d0d;
-    color: white;
-    padding: 7px;
-    padding-left: 30px;
-    margin-top: 20px;
-    margin-left:-10px;
-    margin-bottom: 20px;
-    
-  }
-  
-  .photo {
-    position: relative;
-  
-  }
-  
-  .card-data {
-    position: absolute;
-    top: 20%;
-    left: 1%;
-    z-index: 2;
-    width: 35%;
-    font-size: 15px;
-    
-  
-  }
-  
-  .card-weather {
-    position: absolute;
-    top: 115%;
-    right: 1%;
-    z-index: 2;
-    width: 35%;
-    font-size: 15px;
-  
-  }
-  
-  .card-weather #icon {
-    display: none;
-   }
-  
-  
-  }
   
   
   
