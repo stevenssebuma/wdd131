@@ -131,7 +131,7 @@
   @media (min-width:1000px) {
   
 .card-data, .card-weather {
-    background-color: rgba(247, 217, 217, 0.5); /* Transparent with a shade */
+    background-color: rgba(247, 217, 217, 0.5); 
     padding-bottom: 20px;
 }
   
