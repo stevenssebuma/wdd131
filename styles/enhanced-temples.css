@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+
+}
+
+#hamburger {
+    border: none;
+    background: none;
+    font-size: larger;
+    color: white;
+}
+
+#hamburger::before {
+    content: "☰";
+}
+
+#hamburger.open::before {
+    content: "X";
+}
+
+#nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #123d57;
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+    padding: 10px;
+    color: white;
+}
+
+
+nav a:hover {
+    text-decoration: none;
+    background-color: aliceblue;
+    color: #123d57;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+#nav-header {
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+}
+
+ul {
+    display: none;
+    margin: 5px;
+    padding-top: 10px;
+    padding: 5px;
+}
+
+.open-ul {
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    padding: 5px;
+}
+
+li:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+    height: 300px;
+    min-width: 320px;
+    padding: 2px;
+
+}
+
+figure {
+    margin: 20px;
+}
+
+main {
+    text-align: center;
+    max-width: 90%;
+    margin: auto;
+    justify-items: center;
+}
+
+.temple-img {
+    display: grid;
+    grid-template: 1fr / 1fr;
+}
+
+h2 {
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+footer {
+    background-color: #123d57;
+    color: white;
+    font-family: Archivo, Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+@media screen and (min-width: 700px) {
+    .temple-img {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 2rem;
+    }
+
+    img {
+        width: 100%;
+        height: 300px;
+        min-width: 320px;
+        padding: 2px;
+    
+    }
+    #hamburger {
+        display: none;
+    }
+
+    #nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        float: right;
+        margin: 0;
+        text-align: center;
+        padding: 0;
+        min-width: 35%;
+        justify-content: space-between;
+    }
+}
