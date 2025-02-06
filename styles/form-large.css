@@ -1,0 +1,66 @@
+
+@media screen and (min-width: 640px){
+
+    :root{
+
+        --principal-font: "Oswald", sans-serif;
+	    --background: #114e8085;
+	    --header-footer-color: #4b3c9c;
+	    --button-color: #3d4fa0;
+	    --optionalcolor: #5e347c;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    input[type="radio"] {
+        display: none;
+        position: relative;
+        caret-color: rgba(0, 0, 0, 0);
+    }
+    
+    .stars {
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: center;
+    }
+    
+    .stars > label {
+        color: gold;
+        width: 10px;
+        height: auto;
+        font-size: 50px;
+        margin-left: 55px;
+        display: flex;
+        align-items: center;
+        caret-color: rgba(0, 0, 0, 0);
+        text-align: center;
+    }
+    
+    .stars > label:hover {
+        color: #c00a0a;
+    }
+    
+    .stars > label::before {
+        content: "\2606";
+    }
+    
+    .stars input:checked ~ label::before {
+        content: "\2605";
+    }
+
+
+    form {
+        max-width: 60%;
+        margin: 0 auto
+    }
+
+    main {
+        justify-items: center;
+    }
+}
+
+
