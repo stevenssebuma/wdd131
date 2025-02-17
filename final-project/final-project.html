@@ -7,6 +7,7 @@
     <meta name="description" content="This is the final project of my WDD 131 Course. It's technically a fully designed webite">
     <meta name="author" content="Steven Ssebuma">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/modals.css">
     <script src="scripts/scripts.js" defer></script>
 </head>
 <body>
@@ -17,9 +18,9 @@
                 <button id="hamburger" title="menu button"></button>
             </div>
             <ul>
-                <li><a href="finalproject.html">Home</a></li>
+                <li><a href="final-project.html">Home</a></li>
                 <li><a href="website.html">Website</a></li>
-                <li><a href="tech.html">Tech</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li><a href="about.html">About Us</a></li>
             </ul>
         </nav>
@@ -28,7 +29,7 @@
         <section id="hero">
             <h1>Welcome to the Cyber Touch</h1>
             <p>Your service endpoint!</p><br>
-            <a href="about.html" class="btn">Learn More</a>
+            <a href="contact.html" class="btn">Contat Us</a>
         </section>
         <section id="courses">
             <h2>Our Services</h2>
@@ -45,11 +46,38 @@
         <section id="admissions">
             <h2>Admissions</h2>
             <p>Learn about our admissions process, requirements, and deadlines. Follow this link <a href="admissions.html" class="btn">More Info</a></p>
+            <button class="btn" onclick="openModal('admissionsModal')">View Admissions</button>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Career Institute Uganda</p>
+        <p>&copy;<span id="year"></span>  Cyber Touch</p>
         <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
+
+    <!-- Modals -->
+    <div id="coursesModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('coursesModal')">&times;</span>
+            <h2>Courses</h2>
+            <p>Details about courses...</p>
+        </div>
+    </div>
+
+    <div id="newsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('newsModal')">&times;</span>
+            <h2>News & Events</h2>
+            <p>Details about news and events...</p>
+        </div>
+    </div>
+
+    <div id="admissionsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('admissionsModal')">&times;</span>
+            <h2>Admissions</h2>
+            <p>Details about admissions...</p>
+        </div>
+    </div>
+
 </body>
 </html>
