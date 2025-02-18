@@ -24,9 +24,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const imageGallery = document.querySelector('.image-gallery');
     if (imageGallery) {
         const images = [
-            { src: 'images/ourcampus.jpg', caption: 'Our Campus' },
-            { src: 'images/graduation.jpg', caption: 'Graduation Ceremony' },
-            { src: 'images/studentlife.jpg', caption: 'Student Life' }
+            { src: 'images/tech-support2.jpg', caption: 'The more in Artificial intellingence offered is just a click away.' },
+            { src: 'images/tech-support.jpg', caption: 'Support is here to be offered at your contact' },
+            { src: 'images/Tips-for-Choosing-Team-Members.jpeg', caption: 'Thank you for your collaboration and teamwork' }
         ];
         localStorage.setItem('images', JSON.stringify(images));
         images.forEach(image => {
@@ -56,9 +56,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const courseList = document.querySelector('.course-list');
     if (courseList) {
         const courses = [
-            { title: 'Tourism & Travel Foundation', description: '<button class="btn" onclick="openModal(\'newsModal\')">View News</button>', imgSrc: 'images/homepage-pic2.jpg' },
-            { title: 'Airport Operations', description: '<button class="btn" onclick="openModal(\'newsModal\')">View News</button>', imgSrc: 'images/homepage-pic3.jpg' },
-            { title: 'Cargo Handling', description: '<button class="btn" onclick="openModal(\'newsModal\')">View News</button>', imgSrc: 'images/pexels-dzenina-lukac-930530.jpg' },
+            { title: 'Web Development', description: '<button class="btn" onclick="openModal(\'newsModal\')">Learn More</button>', imgSrc: 'images/homepage-pic2.jpg' },
+            { title: 'Tech Soluctions', description: '<button class="btn" onclick="openModal(\'newsModal\')">Learn More</button>', imgSrc: 'images/homepage-pic3.jpg' },
+            { title: 'Web Maintainance', description: '<button class="btn" onclick="openModal(\'newsModal\')">Learn More</button>', imgSrc: 'images/pexels-dzenina-lukac-930530.jpg' },
         ];
         localStorage.setItem('courses', JSON.stringify(courses));
         courses.forEach(course => {
@@ -81,16 +81,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
             courseList.appendChild(container);
         });
+
+        
         
     }
+
+    
 
     // Add news items to the News page
     const newsList = document.querySelector('.news-list');
     if (newsList) {
         const newsItems = [
-            { title: 'New Semester Begins', description: 'Join us for the start of a new academic year.', date: 'June 1, 2024', imgSrc: 'images/page2-pic.jpg' },
-            { title: 'Workshop on AI', description: 'Attend our workshop on artificial intelligence and machine learning.', date: 'June 10, 2024', imgSrc: 'images/page2-pic2.jpg' },
-            { imgSrc: 'images/pexels-serpstat-572056.jpg', title: 'Graduation Ceremony', description: 'Celebrate the achievements of our graduates.', date: 'July 15, 2024' }
+            { title: 'Get Discounts this holidya Season', description: 'Join us for the start of a new academic year.', date: 'April 1, 2025', imgSrc: 'images/page2-pic.jpg' },
+            { title: 'Workshop on AI', description: 'Attend our workshop on artificial intelligence and machine learning.', date: 'June 10, 2025', imgSrc: 'images/where-is-ai-used-1024x683.jpg' },
+            { imgSrc: 'images/pexels-serpstat-572056.jpg', title: 'Programming Class Offered', description: 'Join the scheme of learners in AI, Mordern Programming Principles & Creativity', date: 'July 15, 202' }
         ];
         localStorage.setItem('newsItems', JSON.stringify(newsItems));
         newsItems.forEach(news => {

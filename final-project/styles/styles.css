@@ -42,6 +42,10 @@ Fonts are separated by a | */
     content: "X";
 }
 
+li.current-menu-item a{
+    background-color: var(--accent1-color);
+    color: var(--nav-hover-background-color);
+   }
 
 #nav {
     display: flex;
@@ -206,6 +210,10 @@ figure{
     transition: transform 0.5s ease, filter 0.5s ease;
 }
 
+.image-gallery img{
+    width: 400px;
+}
+
 .image-gallery .caption, .course-item .caption, .news-item .caption {
     text-align: center;
     margin-top: 5px;
@@ -289,7 +297,7 @@ footer {
     }
 
     #nav {
-        background-color: var(--paragraph-color-on-white);
+        display: flex;
         color: #fff;
         display: flex;
         flex-direction: row;
